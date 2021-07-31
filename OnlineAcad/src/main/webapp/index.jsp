@@ -103,14 +103,14 @@
     <section>
     	<div class="row">
   <div class="column side">
-    <h3>Courses Offered</h3>
+    <h3>Search Teacher By Cource Name</h3>
     <ul style="background-color: #D9D0AC, list-style-type:none;" >
-		  <li style="width:100%;"><a href="#Guitar">Guitar Lessons</a></li>
-		  <li style="width:100%;"><a href="#esports">Esports Coach</a></li>
-		  <li style="width:100%;"><a href="#singing">Singing lessons</a></li>
-		  <li style="width:100%;"><a href="#coding">Coding class</a></li>
-		  <li style="width:100%;"><a href="#english">English Lessons</a></li>
-		  <li style="width:100%;"><a href="#poetry">Poetry</a></li>
+		  <li style="width:100%;"><a href="teachers?department=Guitar&stars=All">Guitar Lessons</a></li>
+		  <li style="width:100%;"><a href="teachers?department=ESport&stars=All">Esports Coach</a></li>
+		  <li style="width:100%;"><a href="teachers?department=Singing&stars=All">Singing lessons</a></li>
+		  <li style="width:100%;"><a href="teachers?department=Coding&stars=All">Coding class</a></li>
+		  <li style="width:100%;"><a href="teachers?department=English&stars=All">English Lessons</a></li>
+		  <li style="width:100%;"><a href="teachers?department=Poetry&stars=All">Poetry</a></li>
 		</ul>
   </div>
   

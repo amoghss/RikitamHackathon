@@ -96,7 +96,7 @@ background-color:#f2f2f2
 <body>
 
 <div class="container"><h3><u>Register New Student</u></h3>
-	<form class="form-inline" action="" > 
+	<form class="form-inline" action="<%= request.getContextPath()%>/registerS" method="post" > 
 	  
 	   
 	    	<div class="row">
@@ -104,7 +104,7 @@ background-color:#f2f2f2
 		        			<label for="uname">Username</label>
 		      			</div>
 		      			<div class="col-75">
-		       				 <input type="text" id="uname" name="username" >
+		       				 <input type="text" id="uname" name="uname" >
 		      			</div>
     		</div>
 	    	<div class="row">
@@ -112,7 +112,7 @@ background-color:#f2f2f2
 		        			<label for="fname">First Name</label>
 		      			</div>
 		      			<div class="col-75">
-		       				 <input type="text" id="fname" name="name" >
+		       				 <input type="text" id="fname" name="fname" >
 		      			</div>
     		</div>
 	    	<div class="row">
@@ -137,7 +137,7 @@ background-color:#f2f2f2
 		        			<label for="phnum">Phone Number</label>
 		      			</div>
 		      			<div class="col-75">
-		       				 <input type="text" name="phnum" size="30">
+		       				 <input type="text" id="phnum" name="phnum" size="30">
 		      			</div>
     		</div>	    	   
 
@@ -146,16 +146,16 @@ background-color:#f2f2f2
         			<label for="pwd">Password</label>
       			</div>
       			<div class="col-75">
-       				 <input type="password" id="pwd" name="pwd" pattern="(?=.\d)(?=.[a-z])(?=.[A-Z])(?=.[@#$%]).{8,10}" title="Must contain at least one number and one uppercase and lowercase letter, in between 8 to 10">
-      			</div>
+       				 <input type="password" id="pwd" name="pwd" >
+       				 </div>
     		</div>
 	    	<div class="row">
       			<div class="col-25">
         			<label for="cpwd">Confirm Password</label>
       			</div>
       			<div class="col-75">
-       				 <input type="text" id="cpwd" name="cpwd" pattern="(?=.\d)(?=.[a-z])(?=.[A-Z])(?=.[@#$%]).{8,10}" title="Must contain at least one number and one uppercase and lowercase letter, in between 8 to 10"> 
-			<input type="submit" value="Add User" style="width:40%;">
+       				 <input type="text" id="cpwd" name="cpwd" >
+       				 <input type="submit" value="Add User" style="width:40%;">
       			</div>
     		</div>    			   
   

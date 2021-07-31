@@ -97,9 +97,23 @@ background-color:#f2f2f2
 <body>
 
 <div class="container"><h3><u>Login</u></h3>
-	<form class="form-inline" action="" > 
+	<form class="form-inline" action="<%= request.getContextPath()%>/signin" method="post" > 
 	  
-	   
+	   		<div class="row">
+		      			<div class="col-25">
+		        			<label for="Choice">Signin As</label>
+		      			</div>
+		      			<div class="col-75">
+		       				<select id="choice" name="choice">
+						  <optgroup>
+						  	<option value=1>Teacher</option>
+						    <option value=2>Student</option>
+						    
+						  </optgroup>
+					  </select>
+		      			</div>
+    		</div>
+    		
 	    	<div class="row">
 		      			<div class="col-25">
 		        			<label for="uname">Username</label>
@@ -113,8 +127,8 @@ background-color:#f2f2f2
         			<label for="pwd">Password</label>
       			</div>
       			<div class="col-75">
-       				 <input type="password" id="pwd" name="pwd" pattern="(?=.\d)(?=.[a-z])(?=.[A-Z])(?=.[@#$%]).{8,10}" title="Must contain at least one number and one uppercase and lowercase letter, in between 8 to 10">
-      			</div>
+       				 <input type="password" id="pwd" name="pwd" >
+       				 </div>
     		</div>
     		
     		<div class="row">
